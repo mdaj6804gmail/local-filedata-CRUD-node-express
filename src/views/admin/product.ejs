@@ -14,11 +14,13 @@
       <h4 class="font-bold text-2xl">$ <%=item.price %></h4>
       <p><%=item.description %></p>
       <div class="mt-5 mb-2">
-        <a href="/admin/products/edit/<%= item.id %>">
+        <a href="/admin/products/edit/<%= item.ID %>">
           <button class="btn">Edit</button></a
         >
-        <a href="/admin/products/delete/<%= item.id %>">
+        <a href="/admin/products/delete/<%= item.ID %>">
           <button class="btn">Delete</button></a
+        >  <a href="/admin/products/<%= item.ID %>">
+          <button class="btn">Details</button></a
         >
       </div>
     </div>

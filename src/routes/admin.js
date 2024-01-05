@@ -6,7 +6,7 @@ const {
   getIdByDeleteProduct,
   getIdByEditProduct,
   IdByEditProduct,
-} = require("../controllers/admin.controller");
+} = require("../controllers/admin.db_product");
 const router = require("express").Router();
 
 router.get("/add-product", getAddProduct);
